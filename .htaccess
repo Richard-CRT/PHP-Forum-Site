@@ -1,0 +1,9 @@
+AuthUserFile /hdd/.htpasswd
+AuthGroupFile /dev/null
+AuthName "Please Enter Password"
+AuthType Basic
+Require user admin forum
+
+ErrorDocument 401 /forum/error/unauthorised.php
+ErrorDocument 403 /forum/error/forbidden.php
+ErrorDocument 404 /forum/error/notfound.php
